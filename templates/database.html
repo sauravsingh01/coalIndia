@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           
+            body{
+                margin:0;
+            }
+            /*header start*/
+            header{
+                background-color:navy;
+                
+            }
+            .coal{
+                height:9vh;
+            }
+            P{
+                position:relative;
+                display:inline;
+                bottom:2.5vh;
+                left:18vw;
+                font-size:5vh;
+                color:white;
+            }
+            nav{
+                float:right;
+                
+                
+            }
+            .hamburg{
+                    height:9vh;
+                    width:5vw;
+                    float:right;
+                    margin-top:0vh;
+                    background-image: url('https://cdn0.iconfinder.com/data/icons/essentials-line/100/Menu-512.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                   
+            }
+            a{
+                
+                box-sizing: border-box;
+                display:block;
+                height:10vh;
+                text-decoration: none;
+                color:black;
+                text-align: center;
+                padding-top:2vh;
+                background-color:rgba(138, 145, 148, 0.521);
+            }
+            a:hover{
+                border-bottom:solid;
+            }
+            .content{
+                margin-top: 10vh;
+                
+                height:30vh;
+                width:12vw;
+                display:none;
+                
+            }
+            nav:hover .content{
+                display:block;
+            }
+            nav:hover .hamburg{
+                background-image: url('https://cdn3.iconfinder.com/data/icons/ui-icons-5/16/cross-small-01-512.png');
+            }
+            .user{
+                height:5vh;
+                position:relative;
+                left:25vw;
+                bottom:1.5vh;
+                
+            }
+            .welcome{
+                font-size:2.4vh;
+                position:relative;
+                bottom:3.5vh;
+                left:25vw;
+                
+            }
+           /*header end*/
+            .sidepanel{
+                margin-top:5vh;
+                float:left;
+                height:40vh;
+                width:15vw;
+                background-color: navy;
+            }
+            .data{
+                margin-top:15vh;
+                padding-top:3vh;
+            }
+            fieldset{
+                   position:relative;
+                   top:10vh;
+                   left:17vw;
+                   width:50vw;
+                   background-color: navy;
+            }
+            table{
+                border:solid navy;
+                background-color: white;
+            }
+            caption{
+                color:white;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>welcome {username}</title>
+    </head>
+    <body>
+        <header>
+           <img class="coal" src="http://beta.coalindia.in/static/images/logo.png">
+           <p>COAL PRODUCTION DAILY DATATBASE</p>
+           <img class="user" src="images/user.png">
+           <p class="welcome">welcome {username}</p>
+           <nav>
+           <div class="hamburg"></div>
+           <div class="content">
+                
+            <a href="#">HOME</a> 
+
+            <a href="#">LOG OUT</a>  
+        
+             <a href="#">HELP</a>  
+         
+             <a href="#">CONTACT US</a>  
+
+             
+           </div>
+           </nav>
+        </header>
+        <section>
+            <div class="sidepanel">
+                <a href="#" class="data">SAVED DATABASES</a>
+            </div>
+            <fieldset>
+                <table>
+                    <tr>
+                        <caption><b>PRODUCTION TABLE<b></caption>
+                        <th>DATE</th>
+                        <th>ACTUAL PRODUCTION</th>
+                        <th>ACCUMULATED ACTUAL PRODUCTION</th>
+                        <th>REPORTED PRODUCTION</th>
+                        <th>ACCUMULATED REPORTED PRODUCTION</th>
+                    </tr>
+                    <tr>
+                        <td><input type="date" id="date" ></td>
+                        <td><input type="number" value="0" id="a.pro"></td>
+                        <td><output type="number"  id="aa.pro"></td>
+                        <td><input type="number" value="0" id="r.pro"></td>
+                        <td><output type="number"  id="ar.pro"></td>
+
+                    </tr>
+                </table>
+                <input type="submit" style="margin-left:22vw;cursor:pointer">
+            </fieldset>
+            <fieldset style="margin-top:18vh;left:9vw;">
+                <table>
+                    <tr>
+                        <caption><b>TRANSPORT TABLE<b></caption>
+                        <th>DATE</th>
+                        <th>TRANSPORT TRIP</th>
+                        <th>ACCUMULATED TRANSPORT TRIP</th>
+                        <th>TRANSPORT WEIGHT(Ton)</th>
+                        <th>ACCUMULATED TRANSPORT WEIGHT(Ton)</th>
+                        <th>DISPATCH</th>
+                        <th>ACCUMULATED DISPATCH</th>
+                    </tr>
+                    <tr>
+                        <td><input type="date" id="date" ></td>
+                        <td><input type="number" value="0" id="a.pro"></td>
+                        <td><output  id="aa.pro"></td>
+                        <td><output  id="r.pro"></td>
+                        <td><output  id="ar.pro"></td>
+                        <td><input type="number" value="0" id="dis"></td>
+                        <td><output  id="a.dis"></td>
+
+
+                    </tr>
+                </table>
+                <input type="submit" style="margin-left:30vw;cursor:pointer;">
+            </fieldset>
+        </section>
+    </body>
+</html>
